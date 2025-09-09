@@ -645,7 +645,7 @@ class DiscountIOS {
     return DiscountIOS(
       identifier: json['identifier'] as String? ?? '',
       type: json['type'] as String? ?? '',
-      price: json['price'] as String? ?? '0',
+      price: json['price']?.toString() ?? '0',
       localizedPrice: json['localizedPrice'] as String? ?? '',
       paymentMode: json['paymentMode'] as String? ?? '',
       numberOfPeriods: json['numberOfPeriods']?.toString() ?? '0',
